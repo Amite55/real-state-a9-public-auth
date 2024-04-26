@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -8,6 +9,18 @@ const Register = () => {
     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form className="card-body">
         <div className="form-control">
+
+
+          <label className="label">
+            <span className="label-text">Name</span>
+          </label>
+          <input type="text" placeholder="Enter your name" className="input input-bordered" required />
+
+          <label className="label">
+            <span className="label-text">Photo Url</span>
+          </label>
+          <input type="text" placeholder="Photo url" className="input input-bordered" required />
+
           <label className="label">
             <span className="label-text">Email</span>
           </label>
@@ -26,6 +39,9 @@ const Register = () => {
           <button className="btn btn-primary">register</button>
         </div>
       </form>
+      <div className="text-center">
+        <p>You have an account please <Link to="/login" className="underline text-teal-700 font-bold">Login</Link></p>
+     </div>
     </div>
 </div>
     );
