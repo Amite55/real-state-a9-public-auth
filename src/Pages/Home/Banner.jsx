@@ -90,9 +90,10 @@ const Banner = () => {
             </div>
 
 
-                    <div className="text-center my-20">
-                        <h1 className="text-4xl font-bold mb-10">Hello! welcome There</h1>
-                        <p className="mx-28">Our hostel is located in the city’s finest and trendiest district. Everyone who is interested in being a part of the creative and cutting-edge world that is New York, you are welcome to CityHostel for the best experience.</p>
+                    <div className="text-center my-20" data-aos="fade-left" >
+                        <h1  className="text-4xl font-bold mb-10"  >Hello! welcome There</h1>
+
+                        <p data-aos="fade-left"   data-aos-duration="1000" className="mx-28">Our hostel is located in the city’s finest and trendiest district. Everyone who is interested in being a part of the creative and cutting-edge world that is New York, you are welcome to CityHostel for the best experience.</p>
                     </div>
 
         </>
