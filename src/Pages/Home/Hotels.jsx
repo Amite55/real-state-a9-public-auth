@@ -1,9 +1,10 @@
 import { FaLocationDot } from "react-icons/fa6";
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 
 const Hotels = ({hostelsAll}) => {
-   const { estate_title, location, price, description} = hostelsAll;
+   const {id, estate_title, location, price, description} = hostelsAll;
     console.log(hostelsAll)
     return (
         <div className="card card-compact bg-base-100 shadow-xl">
@@ -16,7 +17,9 @@ const Hotels = ({hostelsAll}) => {
                 <p>Price: {price}</p>
                 </div>
                 <div className="card-actions justify-end">
+                    <Link to={`/hostelDetails/${id}`}>
                     <button className="btn btn-primary">View Property</button>
+                    </Link>
                 </div>
             </div>
         </div>
