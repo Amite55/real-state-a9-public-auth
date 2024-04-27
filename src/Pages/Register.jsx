@@ -1,12 +1,12 @@
-import { useContext } from "react";
+
 import { Link } from "react-router-dom";
-import { AuthContext } from "../Component/AuthProvider";
 import { useForm } from "react-hook-form";
+import useAuth from "../customHooks/useAuth";
 
 
 const Register = () => {
 
-  const {createUser} = useContext(AuthContext);
+  const {createUser} = useAuth();
 
   const {
     register,

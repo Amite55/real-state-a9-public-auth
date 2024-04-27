@@ -1,12 +1,13 @@
-import { useContext } from "react";
+
 import { Link } from "react-router-dom";
-import { AuthContext } from "../Component/AuthProvider";
 import { useForm } from "react-hook-form";
+import SocialLogin from "../Component/SocialLogin";
+import useAuth from "../customHooks/useAuth";
 
 
 const Login = () => {
 
-  const {signInUser} = useContext(AuthContext)
+  const {signInUser} = useAuth()
 
   const {
     register,
@@ -49,6 +50,7 @@ const Login = () => {
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
+      <SocialLogin></SocialLogin>
      <div className="text-center">
         <p>You have an not account please <Link to="/register" className="underline text-teal-700 font-bold">Register</Link></p>
      </div>
