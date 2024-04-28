@@ -4,7 +4,7 @@ import useAuth from "../customHooks/useAuth";
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
-
+  console.log(user)
   const navlinks = <>
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to="/updateProfile">Update Profile</NavLink></li>
@@ -37,11 +37,16 @@ const Navbar = () => {
       {
         user?.email ?
           <div className="navbar-end gap-3">
-            <Link onClick={logOut} className="btn">LogOut</Link>
+
+           <div className="flex gap-2 items-center">
+            <p className="font-bold text-white">{user?.displayName}</p>
+            
+           <Link onClick={logOut} className="btn">LogOut</Link>
+           </div>
 
             <div className="avatar">
               <div className="w-12 rounded-full">
-                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={user?.photoURL || "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} />
               </div>
             </div>
 

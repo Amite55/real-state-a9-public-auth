@@ -1,18 +1,16 @@
 
-import { Link, useLocation, useNavigation } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../customHooks/useAuth";
-import { useEffect } from "react";
 
 
 const Register = () => {
 
-  const {createUser, user} = useAuth();
+  const {createUser, updateUserProfile} = useAuth();
   
-  const navigate = useNavigation();
-  const location = useLocation();
+  const navigate = useNavigate();
 
-  const from = location.state || "/";
+
 
   const {
     register,
@@ -20,23 +18,16 @@ const Register = () => {
     formState: { errors },
   } = useForm()
   const onSubmit = (data) =>{
-    const {email, password} = data;
+    const {email, password,  fullName, image} = data;
     createUser(email, password)
-    .then(result => {
-      console.log(result.user)
-    })
-    .catch(error => {
-      console.log(error)
+    .then(() => {
+      updateUserProfile(fullName, image)
+      .then(() =>{
+        navigate("/")
+      })
     })
   
   }
-
-  useEffect(()=>{
-    if(user){
-      navigate(from)
-    }
-  },[user, navigate, from])
-
     return (
         <div className="hero min-h-screen bg-base-200">
   
