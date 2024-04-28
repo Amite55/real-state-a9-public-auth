@@ -5,6 +5,7 @@ import HostelDetails from "../Pages/HostelDetails";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import ErrorPage from "../Pages/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/hostelDetails/:id",
-                element: <HostelDetails></HostelDetails>,
+                element: <PrivateRoute> <HostelDetails></HostelDetails></PrivateRoute>,
                 loader: () => fetch('../../public/hostelData.json')
             }
         ]

@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 
 
 const Hotels = ({hostelsAll}) => {
-   const {id, estate_title, location, price, description} = hostelsAll;
-    console.log(hostelsAll)
+   const {id, images, estate_title, location, price, description} = hostelsAll;
+
+    console.log(hostelsAll.images)
     return (
         <div className="card card-compact bg-base-100 shadow-xl">
-            <figure><img src={hostelsAll.images} alt="Shoes" /></figure>
+            <figure><img src={images} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{estate_title}</h2>
                 <p>{description}</p>

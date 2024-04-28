@@ -1,12 +1,18 @@
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigation } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from "../customHooks/useAuth";
+import { useEffect } from "react";
 
 
 const Register = () => {
 
-  const {createUser} = useAuth();
+  const {createUser, user} = useAuth();
+  
+  const navigate = useNavigation();
+  const location = useLocation();
+
+  const from = location.state || "/";
 
   const {
     register,
@@ -24,6 +30,12 @@ const Register = () => {
     })
   
   }
+
+  useEffect(()=>{
+    if(user){
+      navigate(from)
+    }
+  },[user, navigate, from])
 
     return (
         <div className="hero min-h-screen bg-base-200">

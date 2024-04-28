@@ -2,7 +2,7 @@
     {
       "id": 1,
       "estate_title": "Student Haven Apartments",
-      "images": "https://ibb.co/ch496qr",
+      "images": "https://i.ibb.co/3mgbpKC/pexels-anthony-rahayel-125801377-19689227.jpg",
       "segment_name": "Apartment",
       "description": "Modern and cozy apartments designed for student comfort.",
       "price": "$800/month",
@@ -14,7 +14,7 @@
     {
       "id": 2,
       "estate_title": "Campus Towers",
-      "images": "https://ibb.co/tmzv3xQ",
+      "images": "https://i.ibb.co/4dV8GZd/young-friends-hostel.jpg",
       "segment_name": "Studio",
       "description": "Convenient studio units near campus with all utilities included.",
       "price": "$700/month",
@@ -26,7 +26,7 @@
     {
       "id": 3,
       "estate_title": "University Commons",
-      "images": "https://ibb.co/9sNcMjR",
+      "images": "https://i.ibb.co/qyCcxW7/pexels-andrew-3954635.jpg",
       "segment_name": "Townhouse",
       "description": "Spacious townhouses perfect for student groups or families.",
       "price": "$1500/month",
@@ -38,7 +38,7 @@
     {
       "id": 4,
       "estate_title": "Campus View Apartments",
-      "images": "https://ibb.co/BNCyxVN",
+      "images": "https://i.ibb.co/sy2bBrL/front-view-young-friends-hostel.jpg",
       "segment_name": "Apartment",
       "description": "Affordable apartments with stunning views of the campus.",
       "price": "$100,000",
@@ -50,7 +50,7 @@
     {
       "id": 5,
       "estate_title": "Student Plaza",
-      "images": "https://ibb.co/yf3sBGZ",
+      "images": "https://i.ibb.co/kHdc6kw/young-friends-hostel-1.jpg",
       "segment_name": "Studio",
       "description": "Compact studios in a vibrant student community.",
       "price": "$750/month",
@@ -62,7 +62,7 @@
     {
       "id": 6,
       "estate_title": "Academic Residences",
-      "images": "https://ibb.co/myHSXpp",
+      "images": "https://i.ibb.co/NNL7mRR/young-friends-hostel-2.jpg",
       "segment_name": "Apartment",
       "description": "Modern apartments designed to enhance academic focus.",
       "price": "$850/month",
@@ -74,7 +74,7 @@
     {
       "id": 7,
       "estate_title": "Scholar's Haven",
-      "images": "https://ibb.co/xDgxpBb",
+      "images": "https://i.ibb.co/bPvcSCV/front-view-young-friends-hostel-1.jpg",
       "segment_name": "Studio",
       "description": "Comfortable studios in a serene environment conducive to studying.",
       "price": "$700/month",
@@ -86,7 +86,7 @@
     {
       "id": 8,
       "estate_title": "Learning Quarters",
-      "images": "https://ibb.co/BsC7GS5",
+      "images": "https://i.ibb.co/LpZqr2X/side-view-roommates-laying-bed.jpg",
       "segment_name": "Apartment",
       "description": "Spacious apartments designed with student needs in mind.",
       "price": "$900/month",
