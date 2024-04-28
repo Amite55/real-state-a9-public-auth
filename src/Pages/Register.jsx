@@ -23,8 +23,12 @@ const Register = () => {
     .then(() => {
       updateUserProfile(fullName, image)
       .then(() =>{
+        alert('you have successfully register')
         navigate("/")
       })
+    })
+    .catch(()=>{
+      alert('please try again')
     })
   
   }

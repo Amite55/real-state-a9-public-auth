@@ -6,6 +6,9 @@ import useAuth from "../customHooks/useAuth";
 import { useEffect } from "react";
 
 
+ 
+
+
 const Login = () => {
 
   const {signInUser, user} = useAuth();
@@ -32,17 +35,22 @@ const Login = () => {
   })
     .catch(error => {
       console.log(error)
+      alert('Your email and password wrong')
     })
   }
 
     useEffect(()=> {
       if(user){
+        alert('your login successfully')
+       
         navigate(from)
       }
     },[user, navigate, from])
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+<>
+
+<div className="hero min-h-screen bg-base-200">
     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={handleSubmit(onSubmit)} className="card-body">
         <div className="form-control">
@@ -71,8 +79,9 @@ const Login = () => {
         <p>You have an not account please <Link to="/register" className="underline text-teal-700 font-bold">Register</Link></p>
      </div>
     </div>
-         
 </div>
+ 
+</>
     );
 };
 
