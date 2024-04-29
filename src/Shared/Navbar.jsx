@@ -44,8 +44,7 @@ const Navbar = () => {
           <div className="navbar-end gap-3">
 
            <div className="flex gap-2 items-center">
-           <p className="font-bold text-white">{user?.displayName}</p>
-           
+           <p className="font-bold text-white sm:hidden md:block lg:block">{user?.displayName}</p> 
             
            <Link onClick={logOut} className="btn">LogOut</Link>
            </div>

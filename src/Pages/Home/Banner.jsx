@@ -2,6 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/bundle";
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import banner1 from "../../assets/banner1.jpg"
+import banner2 from "../../assets/banner2.jpg"
+import banner3 from "../../assets/banner3.jpg"
+import banner4 from "../../assets/banner4.jpg"
+import banner5 from "../../assets/banner5.jpg"
 const Banner = () => {
     return (
         <>
@@ -20,7 +25,7 @@ const Banner = () => {
                 >
                     <SwiperSlide>
                         <div className="w-full relative">
-                            <img src="../../../public/banner1.jpg" className="w-full" alt="" />
+                            <img src={banner1} className="w-full" alt="" />
                         </div>
                         <div className="absolute  bottom-14 left-10">
                             <em className="text-6xl font-extrabold font-mono text-white ">Save cush for <br /> fun</em>
@@ -31,7 +36,7 @@ const Banner = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="w-full">
-                            <img src="../../../public/banner2.jpg" className="w-full" alt="" />
+                            <img src={banner2} className="w-full" alt="" />
                         </div>
                         <div className="absolute bottom-14 left-10">
                             <button>Book Today</button>
@@ -45,7 +50,7 @@ const Banner = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="w-full">
-                            <img src="../../../public/banner3.jpg" className="w-full" alt="" />
+                            <img src={banner3} className="w-full" alt="" />
                         </div>
                         <div className="absolute  bottom-14 left-10">
                             <button>Book Today</button>
@@ -59,7 +64,7 @@ const Banner = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="w-full">
-                            <img src="../../../public/banner4.jpg" className="w-full" alt="" />
+                            <img src={banner4} className="w-full" alt="" />
                         </div>
                         <div className="absolute  bottom-14 left-10">
                             <button>Book Today</button>
@@ -73,7 +78,7 @@ const Banner = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="w-full">
-                            <img src="../../../public/banner5.jpg" className="w-full" alt="" />
+                            <img src={banner5} className="w-full" alt="" />
                         </div>
                         <div className="absolute  bottom-14 left-10">
                             <button>Book Today</button>
