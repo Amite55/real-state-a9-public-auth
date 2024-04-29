@@ -1,6 +1,31 @@
+Hey's ! This is a Real State Student Hostel services Rect project app;
+
+
+
 Project Name🎃
 
-# MadServices
+# City Hostel Services
+
+project live link :
+
+#
+
+
+
+## npm package
+
+ - aos animated;
+ - swiper react;
+ - react-toastify;
+ - react-router-dom;
+ - react-icons;
+ - react-hook-form;
+ - prop-types;
+ - firebase auth;
+
+
+
+
 
 
 

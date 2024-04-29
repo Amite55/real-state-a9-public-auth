@@ -1,6 +1,7 @@
 import { FaLocationDot } from "react-icons/fa6";
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
+import { FaForward } from "react-icons/fa";
 
 
 const Hotels = ({hostelsAll}) => {
@@ -19,7 +20,7 @@ const Hotels = ({hostelsAll}) => {
                 </div>
                 <div className="card-actions justify-end">
                     <Link to={`/hostelDetails/${id}`}>
-                    <button className="btn btn-primary">View Property</button>
+                    <button className="btn btn-primary">View Property <FaForward /></button>
                     </Link>
                 </div>
             </div>
